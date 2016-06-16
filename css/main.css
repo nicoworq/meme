@@ -1,0 +1,547 @@
+
+
+
+/* -----------
+ *  FONT REDES SOCIALES
+ * ----------- */
+
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.eot");
+    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Flaticon.woff") format("woff"),
+        url("../fonts/Flaticon.ttf") format("truetype"),
+        url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+    /* margin-left: 20px; */
+}
+
+.flaticon-facebook:before { content: "\f100"; }
+.flaticon-instagram:before { content: "\f101"; }
+.flaticon-twitter:before { content: "\f102"; }
+.flaticon-youtube:before { content: "\f103"; }
+
+
+/* -----------
+ *  COMMON
+ * ----------- */
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    border-top: 6px solid #d8d7d7;
+}
+/* -----------
+ *  HEADER
+ * ----------- */
+
+header{
+    padding-top: 31px;
+}
+
+#logo-sitio{}
+
+#partidos-sitio{
+    text-align: right;
+    margin-top: 6px;
+}
+#partidos-sitio a{
+    display: block;
+    margin-bottom: 16px;
+}
+
+
+
+/* -----------
+ *  NAV
+ * ----------- */
+
+#navegacion-primaria{
+    background: #d02478;
+    margin-top: 21px;
+    /* padding-left: 53px; */
+}
+
+#primary-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    padding-left: 11px;
+}
+#primary-menu li{display: inline-block;}
+#primary-menu li a{font-size: 18.36px;color: white;font-weight: bold;text-transform: uppercase;padding: 8px 22px;display: inline-block;}
+#primary-menu li .sub-menu{
+    display: none;
+}
+
+#navegacion-primaria .redes-nav{float: right;margin-top: 4px;}
+
+
+
+#navegacion-primaria .redes-nav a{
+    color: #d02478;
+    padding-top: 6px;
+    margin-left: 4px;
+}
+#navegacion-primaria .redes-nav a i:before{
+    font-size: 17px;
+}
+/* -----------
+ *  REDES ICONOS
+ * ----------- */
+
+.redes-nav a{
+    width: 33px;
+    height: 34px;
+    display: inline-block;
+    background: white;
+    text-align: center;
+}
+
+/* -----------
+ *  NOTICIA SLIDER
+ * ----------- */
+
+#slider-home{
+    background: #d9d8d8;
+    position: relative;
+    padding: 27px 0;
+}
+
+#slider-home-slides{
+    /* width: 100vw; */
+}
+.slide-home{
+    /* width: 300px; */
+    display: block;
+}
+.slide-home .noticia-hash{
+    font-size: 15.68px;
+    font-weight: bold;
+    color:white;
+    background: #d02478;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 8px 7px;
+}
+.slide-home .noticia-contenido{}
+.slide-home .noticia-imagen{
+    min-height: 419px;
+    width: 100%;
+}
+.slide-home .noticia-resumen{
+    color: #020202;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.slide-home .noticia-titulo{
+    font-size: 41px;
+    color: #020202;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+.slide-home .noticia-ver-mas{
+    background: #2ec6ce;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    float: right;
+    padding: 4px 10px;
+    margin-top: 10px;
+}
+
+#dots-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* -----------
+ *  NOTICIAS
+ * ----------- */
+#noticias-social-media{
+    padding-top: 34px;
+}
+#noticias{}
+#noticias h2{
+    font-size: 18.45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #d02478;
+    color: white;
+    margin: 0;
+    padding: 7px 14px;
+    margin-bottom: 18px;
+}
+#noticias h2 a{
+    font-size: 15.65px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    float: right;
+    text-transform: none;
+}
+#listado-3-noticias{}
+#listado-3-noticias .noticia{}
+#listado-3-noticias .noticia .noticia-imagen {
+    width: 100%;
+    height: 107px;
+    background-position: 50%;
+    background-size: cover;
+}
+#listado-3-noticias .noticia .noticia-hash {
+    color: #d02478;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#listado-3-noticias .noticia .noticia-titulo {
+    color: #020202;
+    font-size: 15.85px;
+    font-weight: 900;
+    text-transform: uppercase;
+    min-height: 51px;
+}
+#listado-3-noticias .noticia .noticia-resumen {
+    color: #020202;
+    font-size: 13px;
+    font-weight: 600;
+}
+#listado-3-noticias .noticia .noticia-resumen p{display: inline;}
+#listado-3-noticias .noticia .noticia-resumen .noticia-ver-mas {
+    color: #2ec6ce;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+/* -----------
+ *  TWITTER
+ * ----------- */
+
+#twitter{}
+#twitter h2{
+    font-size: 18.45px;
+    font-weight: bold;
+    background: #2ec6ce;
+    color: white;
+    margin: 0;
+    padding: 4px 5px;
+    margin-bottom: 18px;
+}
+
+#twitter .flaticon-twitter{
+    background: white;
+    color: #2ec6ce;
+    font-size: 12px;
+    display: inline-block;
+    padding: 7px 8px;
+    margin-right: 5px;
+    height: 26px;
+    width: 27px;
+}
+
+#twitter .flaticon-twitter:before{
+    font-size: 14px;
+}
+
+#twitter-container{
+    max-height: 400px; 
+}
+/* -----------
+ *  FACEBOOK
+ * ----------- */
+
+#facebook{}
+#facebook h2{font-size: 18.45px;font-weight: bold;background: #2ec6ce;color: white;margin: 0;padding: 4px 5px;margin-bottom: 18px;}
+
+#facebook .flaticon-facebook{
+    background: white;
+    color: #2ec6ce;
+    font-size: 12px;
+    display: inline-block;
+    padding: 7px 7px;
+    margin-right: 5px;
+    height: 26px;
+    width: 27px;
+}
+#facebook .flaticon-facebook:before{
+    font-size: 14px;
+}
+
+/* -----------
+ *  IMAGEN DESTACADA HOME
+ * ----------- */
+
+#imagen-destacada{padding-bottom: 30px;}
+
+/* -----------
+ *  ACCESOS
+ * ----------- */
+
+#accesos{
+    background: #d9d8d8;
+    padding: 30px 0;
+}
+
+.acceso{
+    background-color: #d02478; 
+    padding: 17px;
+}
+.acceso a{
+    font-weight: bold;
+    font-size:55.75px;
+    color: #d9d8d8;
+    line-height: 48.32px;
+}
+
+.acceso a span{
+    font-weight: 900;
+    letter-spacing: -6px;
+}
+
+/* -----------
+ *  YOUTUBE
+ * ----------- */
+
+#youtube{
+    background: #d9d8d8;
+    padding: 30px 0;
+}
+
+#youtube h2{font-size: 18.45px;font-weight: bold;background: #2ec6ce;color: white;margin: 0;padding: 4px 5px;}
+
+#youtube .flaticon-youtube{
+    background: white;
+    color: #2ec6ce;
+    font-size: 12px;
+    display: inline-block;
+    padding: 7px 7px;
+    margin-right: 5px;
+    height: 26px;
+    width: 27px;
+}
+#youtube .flaticon-youtube:before{
+    font-size: 14px;
+}
+
+
+/* -----------
+ *  CONTACTO
+ * ----------- */
+#contacto{
+    background: white;
+    padding: 30px 0;
+}
+#contacto h2{font-size: 18.45px;font-weight: bold;background: #d02478;color: white;margin: 0;padding: 7px 14px;}
+
+#datos-contacto{
+
+}
+
+#datos-contacto h3{
+    font-weight: 800;
+    color: #d02478;
+    font-size: 23px;
+}
+#datos-contacto h4{
+    color: #020202;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+#datos-contacto h5{
+    font-size: 17px;
+    font-weight: 500;
+    color: #020202;
+    border-bottom: 1px solid #020202;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#datos-contacto p{
+    color: #020202;
+    font-size: 15px;
+    font-weight: 600;
+}
+#datos-contacto p a{}
+
+#form-contacto{
+    position: relative;
+}
+#form-contacto input{
+    background: #d9d8d8;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #666666;
+    display: block;
+    padding: 7px 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#form-contacto input[name=sex]{
+    position: absolute;
+    left: -522222px;
+    top: -99999px;
+}
+
+#form-contacto textarea{
+    background: #d9d8d8;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #666666;
+    display: block;
+    padding: 7px 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    min-height: 100px;
+}
+#form-contacto button{
+    background: #2ec6ce;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    float: right;
+    padding: 3px 11px;
+    margin-top: 26px;
+    position: relative;
+}
+#form-contacto button:before{
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8.5px 9px 8.5px;
+    border-color: transparent transparent #2ec6ce transparent;
+    position: absolute;
+    top: -9px;
+    left: 11px;
+}
+
+/* -----------
+ *  FOOTER
+ * ----------- */
+
+footer{
+    background: #d9d8d8;
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+/* -----------
+ *  FOOTER INSTAGRAM
+ * ----------- */
+
+#instagram{}
+#instagram h2{
+    font-size: 18.45px;
+    font-weight: bold;
+    background: #d02478;
+    color: white;
+    margin: 0;
+    padding: 6px 5px;
+    margin-bottom: 18px;
+}
+
+/* -----------
+ *  NAV FOOTER
+ * ----------- */
+
+#nav-footer{
+    overflow: hidden;
+    padding-bottom: 18px;
+}
+.nav-footer-col{
+    width: 33.33%;
+    float: left;
+}
+.nav-footer-col h3{
+    color: #666666;
+    font-size: 12.54px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 2px;
+}
+.nav-footer-col ul{}
+.nav-footer-col ul li{}
+.nav-footer-col ul li a{
+    color: #666666;
+    font-weight: 600;
+    font-size: 12.54px;
+}
+
+/* -----------
+ *  REDES FOOTER
+ * ----------- */
+
+#redes-footer{
+    padding: 52px 0 35px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+#redes-footer a{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666666;
+    margin-bottom: 13px;
+}
+#redes-footer a i{
+    height: 33px;
+    width: 33px;
+    background: #666666;
+    display: inline-block;
+    margin-right: 9px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#redes-footer a i:before{
+    color: #d9d8d8;
+
+}
+
+
+/* -----------
+ *  COPYRIGHT
+ * ----------- */
+
+#copyright{
+    font-size: 13px;
+    color: #666666;
+    font-weight: 600;
+    padding-top: 48px;
+}
+#copyright a{
+    margin-top: 16px;
+    display: block;
+}
