@@ -6,42 +6,25 @@
  *
  * @package Meme
  */
-
+$urlThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
+<article id="post-<?php the_ID(); ?>" <?php post_class(array('post')); ?>>
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php meme_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
+    <div class="post-thumbnail" style="background-image:url(<?php echo $urlThumbnail[0]; ?>); "></div>
 
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'meme' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+    <h3 class="post-title"><?php the_title(); ?></h3>
+    <div class="post-content">
+        <?php
+        the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'meme' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php meme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        wp_link_pages(array(
+            'before' => '<div class="page-links">' . esc_html__('Pages:', 'meme'),
+            'after' => '</div>',
+        ));
+        ?>
+    </div><!-- .entry-content -->
+    <div class="post-back">
+        <a href="<?php echo get_permalink(get_page_by_title('Noticias')); ?>">Volver</a> 
+    </div>
 </article><!-- #post-## -->

@@ -14,6 +14,80 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 
+    <section id="youtube">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><i class="flaticon-youtube"></i>/MercedesMeier</h2>
+                    <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=UCJy2Dpd3VIhc0-RRC0Ms0DQ" width="480" height="400"></iframe>                   
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>CONTACTO</h2>
+                    <div class="row">
+                        <div id="datos-contacto" class="col-md-6">
+                            <h3>DIPUTADA MERCEDES MEIER</h3>
+                            <h4>Frente social y popular (FSP)</h4>
+                            <h4>PARTIDO DEL TRABAJO Y DEL PUEBLO (PTP)</h4>
+                            <h5>PROVINCIA DE SANTA FE</h5>
+
+                            <p>Encontrá el local más cercano a tu domicilio, escribinos a <a href="mailto:contacto@mercedesmeier.com.ar">contacto@mercedesmeier.com.ar</a> o simplemente completá el formulario:</p>
+
+                            <form id="form-contacto">
+                                <input type="text" name="sex" value="" placeholder="Sex"/>
+                                <input type="text" name="nombre" placeholder="NOMBRE" value=""/>
+                                <input type="text" name="email" placeholder="CORREO ELECTRÓNICO" value=""/>
+                                <input type="text" name="telefono" placeholder="TELÉFONO" value=""/>
+                                <input type="text" name="domicilio" placeholder="DOMICILIO" value=""/>
+                                <input type="text" name="localidad" placeholder="LOCALIDAD" value=""/>
+                                <textarea  name="mensaje" placeholder="MENSAJE" ></textarea>
+
+                                <button>Enviar >></button>
+
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div id="mapa-sucursales">
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="youtube">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><i class="flaticon-youtube"></i>/MercedesMeier</h2>
+                    <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=UCJy2Dpd3VIhc0-RRC0Ms0DQ" width="480" height="400"></iframe>                   
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
         <div class="row">
             <div class="col-md-5">
@@ -69,7 +143,7 @@
                             © 2016 www.mercedesmeier.com.ar</strong>
                         <br/>
                         contacto@mercedesmeier.com.ar - Todos los derechos reservados.
-                        <a href="http://estudiolunes.com.ar"><img src="<?php echo get_template_directory_uri().'/img/estudio-lunes.png'; ?>"/></a>
+                        <a href="http://estudiolunes.com.ar"><img src="<?php echo get_template_directory_uri() . '/img/estudio-lunes.png'; ?>"/></a>
                     </p>
                 </div>
             </div>
@@ -91,6 +165,8 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDYEF2lMRrP2Q7mgGKjKtUs2qF2o8xq24A"></script>
 <?php wp_footer(); ?>
 
 </body>
